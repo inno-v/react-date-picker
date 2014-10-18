@@ -1,5 +1,10 @@
+var CONFIG = require('./boilerplate.json')
+
+var scriptConfig = CONFIG.script || {}
+var mainFile     = scriptConfig.main || './index.jsx'
+
 module.exports = {
-    entry: './index.jsx',
+    entry: mainFile,
     output: {
         publicPath: 'http://localhost:8090/assets'
     },

@@ -4,7 +4,13 @@
   "description": "<YOUR DESCRIPTION>",
   "main": "index.js",
   "scripts": {
-    "test": "make"
+    "test": "make",
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server",
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --colors --port 8090",
+    "build-style": "./node_modules/.bin/webpack --progress --colors --config build-style.config.js",
+    "build-script": "./node_modules/.bin/webpack --progress --colors --config build-script.config.js",
+    "build": "npm run build-style | npm run build-script"
   },
   "repository": {
     "type": "git",
@@ -27,6 +33,8 @@
     "webpack-dev-server": "~1.6.5",
     "webpack": "~1.4.8",
     "file-loader": "~0.8.1",
-    "url-loader": "~0.5.5"
+    "url-loader": "~0.5.5",
+    "extract-text-webpack-plugin": "~0.3.3",
+    "json-loader": "~0.5.1"
   }
 }

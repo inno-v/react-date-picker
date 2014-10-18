@@ -1,7 +1,13 @@
+var CONFIG = require('./boilerplate.json')
+
+var scriptConfig = CONFIG.style || {}
+var mainFile     = scriptConfig.main || './index.jsx'
+var outputFile   = scriptConfig.output || './bundle.js'
+
 module.exports = {
-    entry: './index.jsx',
+    entry: mainFile,
     output: {
-        filename: './bundle.js'
+        filename: outputFile
     },
     module: {
         loaders: require('./loaders.config')
