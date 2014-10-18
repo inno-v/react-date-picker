@@ -22,7 +22,11 @@
     "url": "<YOUR REPO>/issues"
   },
   "dependencies": {
-    "react": "~0.11.2"
+    "react": "~0.11.2",
+    "normalize.css": "~3.0.2",
+    "moment": "~2.8.3",
+    "css-utils": "~0.3.0",
+    "copy-utils": "~1.0.0"
   },
   "devDependencies": {
     "http-server": "~0.7.2",
