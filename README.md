@@ -1,15 +1,11 @@
-react-boilerplate
+react-date-picker
 =================
 
-A boilerplate project to get started with React + Webpack in no-time
+> Date picker for React
 
-Initial support for `Stylus` as a css-preprocessor
-
-
-## Getting started
+## Install
 
 ```sh
-$ git clone https://github.com/radubrehar/react-boilerplate.git <YOUR PROJECT>
-$ cd <YOUR PROJECT>
-$ npm init
+$ npm install react-date-picker
 ```
+
