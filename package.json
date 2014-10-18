@@ -1,0 +1,32 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0",
+  "description": "<YOUR DESCRIPTION>",
+  "main": "index.js",
+  "scripts": {
+    "test": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<YOUR REPO>"
+  },
+  "author": "<YOU>",
+  "license": "MIT",
+  "bugs": {
+    "url": "<YOUR REPO>/issues"
+  },
+  "dependencies": {
+    "react": "~0.11.2"
+  },
+  "devDependencies": {
+    "http-server": "~0.7.2",
+    "style-loader": "~0.8.1",
+    "css-loader": "~0.9.0",
+    "stylus-loader": "~0.4.0",
+    "jsx-loader": "~0.11.2",
+    "webpack-dev-server": "~1.6.5",
+    "webpack": "~1.4.8",
+    "file-loader": "~0.8.1",
+    "url-loader": "~0.5.5"
+  }
+}
