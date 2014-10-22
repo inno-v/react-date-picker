@@ -1,7 +1,7 @@
 {
     "script": {
         "main"  : "./index.jsx",
-        "output": "./bundle.js"
+        "output": "browser.js"
     },
     "style": {
         "main": "./index.styl"

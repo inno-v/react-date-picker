@@ -1,8 +1,8 @@
 {
-  "name": "your-project",
+  "name": "react-date-picker",
   "version": "0.1.0",
-  "description": "<YOUR DESCRIPTION>",
-  "main": "index.js",
+  "description": "React Date Picker",
+  "main": "src/index.jsx",
   "scripts": {
     "test": "make",
     "start": "npm run serve | npm run dev",

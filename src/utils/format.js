@@ -1,10 +1,10 @@
 'use strict'
 
-var moment = require('moment')
 var CONFIG = require('../config')
+var toMoment = require('../toMoment')
 
 function f(mom, format){
-    return mom.format(format)
+    return toMoment(mom).format(format)
 }
 
 module.exports = {

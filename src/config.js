@@ -14,7 +14,7 @@ module.exports = {
     dayFormat: 'D',
 
     //the format in which months should be displayed in year view
-    monthFormat: 'M',
+    monthFormat: 'MMMM',
 
     //the format in which years should be displayed in decade view
     yearFormat: 'YYYY',
@@ -28,10 +28,17 @@ module.exports = {
     //the view to render initially. Possible values are: 'month', 'year', 'decade'
     view: 'month',
 
-    //the date to show in the date picker. defaults to today.
+    //the date to mark as selected in the date picker.
     //Can be a Date object, a moment object or a string.
     //If it's a string, it will be parsed using dateFormat
-    date: new Date(),
+    date: null,
+
+    minDate: null,
+
+    maxDate: null,
+
+    //the date where to open the picker. defaults to today if no date and no viewDate specified
+    viewDate: null,
 
     //if the date property is given as string, it will be parsed using this format
     dateFormat: 'YYYY-MM-DD'

@@ -1,8 +1,8 @@
 var CONFIG = require('./boilerplate.json')
 
-var scriptConfig = CONFIG.style || {}
+var scriptConfig = CONFIG.script || {}
 var mainFile     = scriptConfig.main || './index.jsx'
-var outputFile   = scriptConfig.output || './bundle.js'
+var outputFile   = scriptConfig.output || 'bundle.js'
 
 module.exports = {
     entry: mainFile,
