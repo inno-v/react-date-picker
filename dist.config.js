@@ -1,13 +1,10 @@
-var CONFIG = require('./boilerplate.json')
-
-var scriptConfig = CONFIG.script || {}
-var mainFile     = scriptConfig.main || './index.jsx'
-var outputFile   = scriptConfig.output || 'bundle.js'
-
 module.exports = {
-    entry: mainFile,
+    entry: './src/index.jsx',
     output: {
-        filename: outputFile
+        path         : __dirname + "/dist",
+        libraryTarget: 'umd',
+        library      : 'DatePicker',
+        filename     : require('./DIST_FILE_NAME') + '.js'
     },
     module: {
         loaders: require('./loaders.config')
