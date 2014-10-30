@@ -34,6 +34,7 @@ function onChange(moment, dateString){
  * viewDate: Date / String / Moment / Number
  * minDate : Date / String / Moment / Number
  * maxDate : Date / String / Moment / Number
+ * dateFormat: String [see moment.js formats](http://momentjs.com/docs/#/displaying/format/). Default date format is 'YYYY-MM-DD'
  * onChange: Function
 
 ## Other
