@@ -24,7 +24,7 @@
   "homepage": "https://github.com/radubrehar/react-date-picker",
   "dependencies": {
     "react": "^0.12.0",
-    "react-date-picker": "^1.1.0"
+    "react-date-picker": "^1.1.2"
   },
   "devDependencies": {
     "css-loader": "^0.9.0",

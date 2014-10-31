@@ -3,6 +3,8 @@ react-date-picker
 
 > Date picker for React
 
+See demo at [jslog.com/react-date-picker](http://jslog.com/react-date-picker)
+
 ## Install
 
 ```sh
