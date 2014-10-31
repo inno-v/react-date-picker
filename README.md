@@ -11,7 +11,15 @@ $ npm install react-date-picker
 
 ## Usage
 
-##### NOTE: Don't forget to include index.css or index.styl! ( require('react-date-picker/index.css') )
+### NOTES:
+
+Don't forget to include index.css or index.styl! ( require('react-date-picker/index.css') )
+
+Also you need to have `React` included in the page.
+
+`react-date-picker` works with both React 0.11.2 and the newer 0.12
+
+### Example
 
 ```jsx
 var date = '2014-10-10' //or Date.now()
