@@ -69,6 +69,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	var YearView   = __webpack_require__(4)
 	var DecadeView = __webpack_require__(5)
 
+	// if (React.createFactory){
+	//     MonthView  = React.createFactory(MonthView)
+	//     YearView   = React.createFactory(YearView)
+	//     DecadeView = React.createFactory(DecadeView)
+	// }
+
 	var Views = {
 	    month : MonthView,
 	    year  : YearView,
@@ -123,6 +129,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return Views[this.getViewName()] || Views.month
 	    },
 
+	    getViewFactory: function() {
+	        var view = this.getView()
+
+	        if (React.createFactory){
+	            view.__factory = view.__factory || React.createFactory(view)
+	            view = view.__factory
+	        }
+
+	        return view
+	    },
+
 	    getViewDate: function() {
 	        return this.state.viewMoment || this.props.viewDate || this.props.date || this.now
 	    },
@@ -131,7 +148,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        this.now = +new Date()
 
-	        var view     = this.getView()
+	        var view     = this.getViewFactory()
 	        var props    = asConfig(this.props)
 
 	        props.viewDate = this.getViewDate()
@@ -156,6 +173,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 
 	    renderFooter: function() {
+	        if (this.props.hideFooter){
+	            return
+	        }
+
 	        var todayText    = this.props.today || 'Today'
 	        var gotoSelected = this.props.gotoSelected || 'Go to selected'
 

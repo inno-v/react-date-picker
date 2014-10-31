@@ -26,4 +26,9 @@ var App = React.createClass({
     }
 })
 
-React.renderComponent(<App />, document.getElementById('content'))
+if (React.createFactory){
+    DatePicker = React.createFactory(DatePicker)
+    App        = React.createFactory(App)
+}
+
+;(React.render || React.renderComponent)(<App />, document.getElementById('content'))
