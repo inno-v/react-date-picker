@@ -1,9 +1,0 @@
-{
-    "script": {
-        "main"  : "./index.jsx",
-        "output": "browser.js"
-    },
-    "style": {
-        "main": "./index.styl"
-    }
-}

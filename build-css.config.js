@@ -1,13 +1,8 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-var CONFIG = require('./boilerplate.json')
-
-var styleConfig = CONFIG.style || {}
-var mainFile    = styleConfig.main || './index.styl'
-
 module.exports = {
     entry: {
-        'index': mainFile
+        'index': './index.styl'
     },
     output: {
         filename: 'index.css'

@@ -1,60 +1,39 @@
 {
-  "name": "react-date-picker",
-  "version": "1.0.3",
-  "description": "React Date Picker",
-  "main": "lib/index.js",
+  "name": "react-date-picker-www",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "make",
-    "start": "npm run serve | npm run dev",
-    "serve": "http-server",
-    "dev": "webpack-dev-server --progress --colors --port 8090",
-    "build-style": "webpack --progress --colors --config build-style.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "webpack --progress --colors --config build-css.config.js",
     "build-script": "webpack --progress --colors --config build-script.config.js",
-    "dist": "webpack --progress --colors --config dist.config.js",
-    "dist.min": "webpack --progress --colors --optimize-minimize --optimize-occurence-order --optimize-dedupe --config dist.min.config.js",
-    "dist-nomoment": "webpack --progress --colors --config dist.nomoment.config.js",
-    "dist-nomoment.min": "webpack --progress --colors --optimize-minimize --optimize-occurence-order --optimize-dedupe --config dist.nomoment.min.config.js",
-    "lib": "gulp",
-    "build": "npm run build-style && npm run dist && npm run dist-nomoment && npm run dist.min && npm run dist-nomoment.min && npm run lib"
+    "build": "npm run build-script && npm run build-css",
+    "dev": "webpack-dev-server --progress --colors --port 8090",
+    "serve": "./node_modules/.bin/http-server"
   },
-  "author": "Radu Brehar",
-  "license": "MIT",
-  "dependencies": {
-    "copy-utils": "~1.0.0",
-    "css-utils": "^0.4.2",
-    "moment": "~2.8.3",
-    "normalize.css": "~3.0.2",
-    "react": "~0.11.2"
-  },
-  "devDependencies": {
-    "css-loader": "~0.9.0",
-    "extract-text-webpack-plugin": "~0.3.3",
-    "file-loader": "~0.8.1",
-    "gulp": "^3.8.9",
-    "gulp-react": "^2.0.0",
-    "http-server": "~0.7.2",
-    "json-loader": "~0.5.1",
-    "jsx-loader": "~0.11.2",
-    "style-loader": "~0.8.1",
-    "stylus-loader": "~0.4.0",
-    "url-loader": "~0.5.5",
-    "webpack": "~1.4.8",
-    "webpack-dev-server": "~1.6.5"
-  },
-  "keywords": [
-    "date",
-    "picker",
-    "date-picker",
-    "react",
-    "react-date-picker",
-    "react-component"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/radubrehar/react-date-picker.git"
   },
+  "author": "Radu Brehar",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/radubrehar/react-date-picker/issues"
   },
-  "homepage": "https://github.com/radubrehar/react-date-picker"
+  "homepage": "https://github.com/radubrehar/react-date-picker",
+  "dependencies": {
+    "react": "^0.12.0",
+    "react-date-picker": "^1.1.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.9.0",
+    "extract-text-webpack-plugin": "^0.3.3",
+    "http-server": "^0.7.2",
+    "jsx-loader": "^0.12.0",
+    "style-loader": "^0.8.1",
+    "stylus-loader": "^0.4.0",
+    "webpack": "^1.4.9",
+    "webpack-dev-server": "^1.6.5"
+  }
 }

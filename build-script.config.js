@@ -1,10 +1,9 @@
+'use strict';
+
 module.exports = {
-    entry: './src/index.jsx',
+    entry: './index.jsx',
     output: {
-        path         : __dirname + "/dist",
-        libraryTarget: 'umd',
-        library      : 'DatePicker',
-        filename     : require('./DIST_FILE_NAME') + '.js'
+        filename: 'index.js'
     },
     module: {
         loaders: require('./loaders.config')
